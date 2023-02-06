@@ -1,4 +1,90 @@
-.grid-container{
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: blanchedalmond;
+    font-family: 'Roboto', arial;
+}
+
+.header {
+    padding: 30px 0;
+}
+
+.title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 64;
+}
+.app-panel{
+    display:flex;
+    align-items:center;
+    justify-content: flex-start;
+    gap:100px;
+    max-width: 1100px;
+    margin:0 auto;
+}
+.control-container {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 200px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 250px;
+}
+
+.button-container .normal-button {
+    font-family: 'Roboto', arial;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+.button-container .normal-button.active {
+    background-color: grey;
+    color: white;
+}
+.button-container #reset-button{
+    font-family: 'Roboto', arial;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+input[type='color']{
+    transition: transform 0.1s ease-in-out
+}
+input[type='color']:hover {
+    transform: scale(1.05);
+}
+input[type='color']:active {
+    transition: transform 0.01s ease-in-out;
+    transform: scale(1);
+}
+input[type='color'] {
+    width: 80px;
+    height: 80px;
+    border: none;
+}
+input[type='color']::-webkit-color-swatch-wrapper{
+    padding:0;
+}
+input[type='color']::-webkit-color-swatch {
+    border: none;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+.grid-container {
     float: right;
     margin-top: 1vh;
     margin-right: 6vw;
@@ -8,13 +94,10 @@
     width: 40vw;
     border: 1px rgba(0, 0, 0, 0.404) solid;
 }
-.grid-container div{
+
+.grid-container div {
+    font-family: 'Roboto', arial;
     border: 1px rgba(0, 0, 0, 0.041) solid;
     background-color: rgba(255, 255, 255, 1);
     user-select: none;
-}
-.control-container button{
-    border: 20px black;
-    width: 250px;
-    height: px;
 }
