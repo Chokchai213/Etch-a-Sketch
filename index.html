@@ -10,15 +10,21 @@
 </head>
 
 <body>
-    <h1>Click and drag your cursor on grid to draw</h1>
+    <header class="header">
+        <h1 class="title">Etch-a-Sketch</h1>
+    </header>
+    <div class="app-panel">
     <div class="control-container">
-        <input id="colorPicker" type="color" value="#000000" />
-        <button id="color-button">Color</button>
-        <button id="rainbow-button">Rainbow</button>
-        <button id="erase-button">Eraser</button>
-        <button id="reset-button">Reset</button>
+        <div class="button-container">
+            <input id="colorPicker" type="color" value="#000000" />
+            <button id="color-button" class="normal-button">Color</button>
+            <button id="rainbow-button" class="normal-button">Rainbow</button>
+            <button id="erase-button" class="normal-button">Eraser</button>
+            <button id="reset-button">Reset</button>
+        </div>
     </div>
     <div class="grid-container"></div>
+</div>
     <script src="script.js"></script>
 </body>
 
