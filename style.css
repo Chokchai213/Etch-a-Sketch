@@ -1,0 +1,14 @@
+.grid-container{
+    float: right;
+    margin-top: 1vh;
+    margin-right: 6vw;
+    box-sizing: content-box;
+    display: grid;
+    height: 49vw;
+    width: 49vw;
+    border: 1px rgba(0, 0, 0, 0.404) solid;
+}
+.grid-container div{
+    border: 1px rgba(0, 0, 0, 0.041) solid;
+  background-color: rgba(255, 255, 255, 1);
+}
