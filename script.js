@@ -1,6 +1,6 @@
 const DEFAULT_COLOR = "#000000";
 const DEFAULT_MODE = 'color';
-const DEFAULT_SIZE = 32;
+const DEFAULT_SIZE = 16;
 let perSide = DEFAULT_SIZE;
 let drawMode = DEFAULT_MODE;
 let currentColor = DEFAULT_COLOR;
